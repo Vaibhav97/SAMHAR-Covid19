@@ -1,13 +1,7 @@
 # Pre-screening diagnosis for COVID-19
  
-Abstract: COVID-19, an infectious disease caused by the SARS-CoV-2 virus, was declared a pandemic by the World Health Organisation (WHO) in March 2020. Infections have been growing exponentially and tremendous efforts are being made to fight the disease. Many countries like China, U.S. are already using robots, drones and other technological based solution to screen subjects to take early preventive measure to control spread of the pandemic. While developing countries like India are facing scarcity of these testing tools thus slowing down the most important step of controlling the pandemic. Governments of these countries are looking for various cost-effective, large-scale screening methods to channel clinical testing to place where it is most needed. To tackle this problem, we propose a smartphone-based app to do preliminary screening of subjects. Anyone can use this app to record 2 secs of their cough to do self-diagnosis of COVID-19 disease. Centralized server can process audio cough data to recognize it is COVID/non-COVID cough and return user if he/she is likely to have been suffering from COVID disease. This can help user to take proactive actions to control the disease. This can be augmented with location data to help government to recognise potential hotspot region much before clinical testing. This can also help government to channel their attention to area showing large number of symptoms and thus saving lives of many. The proposed app is not clinically verified, we can not be certain of accuracy of the model but can help people and government to take early preventive actions.
- 
- 
- 
- 
- 
- 
- 
+# Abstract: 
+COVID-19, an infectious disease caused by the SARS-CoV-2 virus, was declared a pandemic by the World Health Organisation (WHO) in March 2020. Infections have been growing exponentially and tremendous efforts are being made to fight the disease. Many countries like China, U.S. are already using robots, drones and other technological based solution to screen subjects to take early preventive measure to control spread of the pandemic. While developing countries like India are facing scarcity of these testing tools thus slowing down the most important step of controlling the pandemic. Governments of these countries are looking for various cost-effective, large-scale screening methods to channel clinical testing to place where it is most needed. To tackle this problem, we propose a smartphone-based app to do preliminary screening of subjects. Anyone can use this app to record 2 secs of their cough to do self-diagnosis of COVID-19 disease. Centralized server can process audio cough data to recognize it is COVID/non-COVID cough and return user if he/she is likely to have been suffering from COVID disease. This can help user to take proactive actions to control the disease. This can be augmented with location data to help government to recognise potential hotspot region much before clinical testing. This can also help government to channel their attention to area showing large number of symptoms and thus saving lives of many. The proposed app is not clinically verified, we can not be certain of accuracy of the model but can help people and government to take early preventive actions.
  
 
 # Theory :
@@ -17,6 +11,7 @@ The idea of using cough for possible preliminary diagnosis of COVID-19 and its f
 # A. DATA USED FOR TRAINING COUGH DETECTOR
 In order to make this app employable in a public place or where various background noises may exist, we design and include a cough detector in our AI-Engine. This cough detector acts as a filter before the diagnosis engine and is capable to distinguish sound from 50 other common environmental noise. To train and test this detector, we use ESC-50 dataset [2]. The ESC-50 dataset is a publicly available dataset that provides a huge collection of speech and environmental sounds. This collection of sounds is categorized into 50 classes, one of these being cough sounds. We have used 993 cough sounds and 993 non-cough environmental sounds for the training of our cough detection system.
 
+![]images/Visualization.png
 
 B. DATA USED FOR TRAINING COVID-19 DIAGNOSIS ENGINE:
 
