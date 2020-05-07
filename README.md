@@ -11,7 +11,7 @@ The idea of using cough for possible preliminary diagnosis of COVID-19 and its f
 # A. DATA USED FOR TRAINING COUGH DETECTOR
 In order to make this app employable in a public place or where various background noises may exist, we design and include a cough detector in our AI-Engine. This cough detector acts as a filter before the diagnosis engine and is capable to distinguish sound from 50 other common environmental noise. To train and test this detector, we use ESC-50 dataset [2]. The ESC-50 dataset is a publicly available dataset that provides a huge collection of speech and environmental sounds. This collection of sounds is categorized into 50 classes, one of these being cough sounds. We have used 993 cough sounds and 993 non-cough environmental sounds for the training of our cough detection system.
 
-![]images/Visualization.png
+![](images/Visualization.png)
 
 B. DATA USED FOR TRAINING COVID-19 DIAGNOSIS ENGINE:
 
@@ -33,7 +33,7 @@ The smartphone app records sound/cough when prompted with the press and release 
 # C. SYSTEM ARCHITECTURE 
 The overall system architecture is illustrated in Figure 2. The smartphone app records sound/cough when prompted with the press and release button. The recorded sounds are transmitted to the server when the diagnosis button is pressed. At the server, the sounds are first fed into the cough detector. In case, the sound is not detected to be cough, the server commands the app to prompt so. In case, the sound is detected to be a cough, the sound is forwarded to the three parallel, independent classifier systems: Deep Learning-based Multi Class classifier (DL-MC), Classical Machine Learning-based Multi Class classifier (CML-MC), Deep Learning-based Binary Class classifier (DL-BC). The results of the all three classifiers are then passed on to a mediator. The app reports a diagnosis only if all three independent classifiers return identical classification results. If the classifiers do not agree, the app returns ‘test inconclusive’. This tri-pronged mediator centered novel architecture is designed to effectively minimize the probability of misdiagnosis. With this architecture, results show that AI4COVID-19 engine predicting ‘COVID-19 likely’ when the subject is not suffering from COVID-19 or vice-versa is extremely low, almost zero on the testing data available at the time of writing. This idea is inspired from the "second opinion" practice in health care. The added caution here is that three independent opinions (diagnosis) are solicited, each with veto power. How this novel architecture manages to reduce the overall misdiagnosis rate of the AI4COVID-19 despite the relatively higher misdiagnoses rate of individual classifiers.
 
-
+![](images/Archytecture.png)
 
 
 
