@@ -33,7 +33,7 @@ The smartphone app records sound/cough when prompted with the press and release 
 # C. SYSTEM ARCHITECTURE 
 The overall system architecture is illustrated in Figure 2. The smartphone app records sound/cough when prompted with the press and release button. The recorded sounds are transmitted to the server when the diagnosis button is pressed. At the server, the sounds are first fed into the cough detector. In case, the sound is not detected to be cough, the server commands the app to prompt so. In case, the sound is detected to be a cough, the sound is forwarded to the three parallel, independent classifier systems: Deep Learning-based Multi Class classifier (DL-MC), Classical Machine Learning-based Multi Class classifier (CML-MC), Deep Learning-based Binary Class classifier (DL-BC). The results of the all three classifiers are then passed on to a mediator. The app reports a diagnosis only if all three independent classifiers return identical classification results. If the classifiers do not agree, the app returns ‘test inconclusive’. This tri-pronged mediator centered novel architecture is designed to effectively minimize the probability of misdiagnosis. With this architecture, results show that AI4COVID-19 engine predicting ‘COVID-19 likely’ when the subject is not suffering from COVID-19 or vice-versa is extremely low, almost zero on the testing data available at the time of writing. This idea is inspired from the "second opinion" practice in health care. The added caution here is that three independent opinions (diagnosis) are solicited, each with veto power. How this novel architecture manages to reduce the overall misdiagnosis rate of the AI4COVID-19 despite the relatively higher misdiagnoses rate of individual classifiers.
 
-![](images/Archytecture.png)
+![](images/Archiytecture.png)
 
 
 
@@ -42,8 +42,9 @@ The overall system architecture is illustrated in Figure 2. The smartphone app r
 The recorded cough sample is forwarded to our network server where the cough detector engine first computes its Mel-spectrogram (as explained in Section III-C), converts it into grayscale to unify the intensity scaling and reduce the image dimensions, and feed it into the Convolutional Neural Network (CNN) to decide whether the recorded sound is of cough or not. An overview of our used CNN structure is shown in Figure 3. As the input Mel spectrogram image is of high dimensions, it’s first passed through a 2 × 2 max-pooling layer to reduce the overall model complexity before proceeding. This relatively smaller image is then passed to two convolutional layers consisting of 32 filters and 5 × 5 kernel size with a max-pooling layer in between to learn the complex features, which are then passed to a 2 × 2 max-pooling to represent the learned features in lower dimensions. The image is flattened to 1 dimension and then passed to two fully connected layers with 128 neurons each. 0.5 dropout is used in both of these to avoid overfitting. The final layer is the softmax classification layer with 2 neurons to distinguish between cough and not cough for the given input. The number of convolutional and fully connected layers are kept low to minimize potential overfitting issues. Since ReLU is the current standard for CNNs, it is used for the activation functions of this model, while Adam is used as the optimizer due to its relatively better efficiency and flexibility. A binary cross entropy loss function completes the detection model.
 
  
- 
- 
+![](images/Cough_Detector.png)
+![](images/DL_MultiClass.png)
+![](images/SVM_MultiClass.png)
  
  
  
@@ -54,6 +55,7 @@ The recorded cough sample is forwarded to our network server where the cough det
 
 # References :
 [1] C. Bales, C. John, H. Farooq, U. Masood, M. Nabeel, and A. Imran, “Can Machine Learning Be Used to Recognize and Diagnose Coughs?” arXiv preprint arXiv:2004.01495, 2020.
+
 [2] Ali Imran, Iryna Posokhova, Haneya N. Qureshi, Usama Masood, Sajid Riaz, Kamran Ali, Charles N. John, Muhammad Nabeel, “AI4COVID-19: AI Enabled Preliminary Diagnosis for COVID-19 from Cough Samples via an App”, arXiv preprint arXiv:2004.01275, 2020.
 
 
