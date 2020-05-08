@@ -49,14 +49,23 @@ The first solution leverages a CNN based four class classifiers using Mel spectr
 non-cough event, a more complex set of layering is required for this version of the CNN. 
 ![](images/DL_MultiClass.png)
 
-# 
-![](images/SVM_MultiClass.png)
+# Classical Machine Learning-based Multi Class classifier
+(CML-MC) A second parallel diagnosis test uses classic machine learning instead of deep learning. It begins with a different preprocessing of cough sounds. Instead of using spectrogram like the first classifier, it uses MFCC and PCA based feature extraction as explained in Section III-C. These smart features are then fed into a multi-class support vector machine for classification. Class balance is achieved by sampling from each class randomly such that the number of samples equals to the number of minority class samples, i.e., class with the lowest number of samples. Using the concatenated feature matrix (of mean MFCC and top few PCAs) as input, we perform SVM with k-fold validation for 100,000 iterations. This approach is illustrated in Figure below.
  
- 
- 
- 
+ ![](images/SVM_MultiClass.png)
 
+#  Deep Learning-based Binary Class classifier (DL-BC)
+The third parallel diagnosis test also uses deep learning based CNN on the Mel spectrogram image of the input cough samples, similar to the first branch of the AI engine, but performs only binary classification of the same input, i.e., is the cough associated COVID-19 or not. The CNN structure used for this technique is the same as the one used for cough detector, elaborated in Figure below.
+![](images/Cough_Detector.png)
 
+# Mediator
+To make the results as reliable as possible with the limited data available at the moment, we propose and implement a novel architecture for the AI engine. It consists of three parallel classification solutions designed independently by three teams. The classifiers outcomes are cross-validated by an automated mediator. Each classifier has a veto power, i.e., if all three classifiers do not agree, the app returns ‘Test inconclusive’. This novel architecture thus minimizes chances of misdiagnosis, compared to stand alone classifiers
+with binary diagnosis. 
+
+# HeatMap
+The idea behind providing a heatmap is helpful from a lot of region wide preparations point of view from the and monitoring hotspots. The User can also be prompted to retest after a defined SLA (say 2-3 days) to keep updated track with the help of notifications to track the spread. 
+
+# Scope
 
 
 # References :
