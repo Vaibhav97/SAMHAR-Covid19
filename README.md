@@ -43,7 +43,13 @@ The recorded cough sample is forwarded to our network server where the cough det
 
  
 ![](images/Cough_Detector.png)
+
+# Deep Learning-based Multi Class classifier (DL-MC)
+The first solution leverages a CNN based four class classifiers using Mel spectrograms (described above) as input. The four classes here are cough caused by: 1) COVID-19, 2) pertussis, 3) bronchitis, or 4) normal person with no known infection. The same type of machine learning categorization procedure used for binary-class cough detection is applied to the labeled cough data originating from several different illnesses. However, due to the differences between two coughs of differing illnesses typically being subtler than a cough and
+non-cough event, a more complex set of layering is required for this version of the CNN. 
 ![](images/DL_MultiClass.png)
+
+# 
 ![](images/SVM_MultiClass.png)
  
  
