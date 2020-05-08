@@ -71,23 +71,37 @@ The idea behind providing a heatmap is helpful from a lot of region wide prepara
 [2] Ali Imran, Iryna Posokhova, Haneya N. Qureshi, Usama Masood, Sajid Riaz, Kamran Ali, Charles N. John, Muhammad Nabeel, “AI4COVID-19: AI Enabled Preliminary Diagnosis for COVID-19 from Cough Samples via an App”, arXiv preprint arXiv:2004.01275, 2020.
 
 [3] Science. (2020) Not wearing masks to protect against coronavirus is a ‘big mistake,’ top Chinese scientist says. Accessed on: April. 1, 2020. [Online]. Available: https://www.sciencemag.org/news/2020/03/not-wearing-masksprotect-against-coronavirus-big-mistake-top-chinese-scientist-says VOLUME 4, 2016 1
+
 [4] M. Cascella, M. Rajnik, A. Cuomo, S. C. Dulebohn, and R. Di Napoli, “Features, evaluation and treatment coronavirus (COVID-19),” in StatPearls [Internet]. StatPearls Publishing, 2020. 
+
 [5] N. van Doremalen, T. Bushmaker, D. H. Morris, M. G. Holbrook, A. Gamble, B. N. Williamson, A. Tamin, J. L. Harcourt, N. J. Thornburg, S. I. Gerber et al., “Aerosol and surface stability of sars-cov-2 as compared with sars-cov-1,” New England Journal of Medicine, 2020.
+
 [6] Tribune. (2020) Coronavirus test results in Texas are taking up to 10 days. Accessed on: Mar. 31, 2020. [Online]. Available: https:
 //tylerpaper.com/covid-19/coronavirus-test-results-in-texas-are-takingup-to-10-days/article_5ad6c9cc-4fa9-573a-bb4d-ada1b97acf42.html
+
 [7] Washington Post. (2020) Hospitals are overwhelmed because of the coronavirus. Accessed on: Mar. 31, 2020. [Online]. Available: https://www.washingtonpost.com/opinions/2020/03/15/hospitalsare-overwhelmed-because-coronavirus-heres-how-help/
-[8] CNN. (2020) A 3rd NYPD member dies of coronavirus after
-hundreds of officers test positive. Accessed on: Mar. 31, 2020. [Online]. Available: https://edition.cnn.com/2020/03/28/us/nypdcoronavirus-deaths/index.html
+
+[8] CNN. (2020) A 3rd NYPD member dies of coronavirus after hundreds of officers test positive. Accessed on: Mar. 31, 2020. [Online]. Available: https://edition.cnn.com/2020/03/28/us/nypdcoronavirus-deaths/index.html
+
 [9] The New York Times. (2020) Virus Knocks Thousands of Health Workers Out of Action in Europe. Accessed on: Mar. 31, 2020.
 [Online]. Available: https://www.nytimes.com/2020/03/24/world/europe/coronavirus-europe-covid-19.html 
+
 [10] CNN. (2020) FDA authorizes 15-minute coronavirus test. Accessed on: Mar. 31, 2020. [Online]. Available: https://www.cnn.com/2020/03/27/us/15-minute-coronavirus-test/index.html
+
 [11] The New York Times. (2020) The Latest Obstacle to Getting Tested? A Shortage of Swabs and Face Masks. Accessed on: Mar. 31, 2020. [Online]. Available: https://www.nytimes.com/2020/03/18/health/coronavirus-testshortages-face-masks-swabs.html
+
 [12] Washington Post. (2020) Shortages of face masks, swabs and basic supplies pose a new challenge to coronavirus testing. Accessed on:
 Mar. 31, 2020. [Online]. Available: https://www.washingtonpost.com/climate-environment/2020/03/18/shortages-face-masks-cotton-swabsbasic-supplies-pose-new-challenge-coronavirus-testing/
+
 [13] L. Wang and A. Wong, “COVID-Net: A Tailored Deep Convolutional Neural Network Design for Detection of COVID-19 Cases from Chest
 Radiography Images,” arXiv preprint arXiv:2003.09871v1, 2020.
+
 [14] X. Xu, X. Jiang, C. Ma, P. Du, X. Li, S. Lv, L. Yu, Y. Chen, J. Su, G. Lang et al., “Deep Learning System to Screen Coronavirus Disease 2019 Pneumonia,” arXiv preprint arXiv:2002.09334, 2020. 
+
 [15] B. W. Schuller, D. M. Schuller, K. Qian, J. Liu, H. Zheng, and X. Li, “Covid-19 and computer audition: An overview on what speech & sound analysis could contribute in the SARS-CoV-2 Corona crisis,” arXiv preprint arXiv:2003.11117, 2020.
+
 [16] I. Song, “Diagnosis of pneumonia from sounds collected using low cost cell phones,” in 2015 International Joint Conference on Neural Networks (IJCNN), 2015, pp. 1–8.
+
 [17] R. Rana, S. Latif, R. Gururajan, A. Gray, G. Mackenzie, G. Humphris, and J. Dunn, “Automated screening for distress: A perspective for the future,” European journal of cancer care, vol. 28, no. 4, p. e13033, 2019.
+
 [18] Siddique Latif1,2, Muhammad Usman3,4, Sanaullah Manzoor5, Waleed Iqbal6, Junaid Qadir5, Gareth Tyson6,11, Ignacio Castro6, Adeel Razi7,8, Maged N. Kamel Boulos9, and Jon Crowcroft10,11, "Leveraging Data Science To Combat COVID-19: A Comprehensive Review".
