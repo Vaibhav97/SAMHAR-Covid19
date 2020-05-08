@@ -63,7 +63,7 @@ To make the results as reliable as possible with the limited data available at t
 with binary diagnosis. 
 
 # HeatMap
-The idea behind providing a heatmap is helpful from a lot of region wide preparations point of view from the and monitoring hotspots. The User can also be prompted to retest after a defined SLA (say 2-3 days) to keep updated track with the help of notifications to track the spread. 
+The idea behind providing a heatmap is helpful from a lot of region wide preparations point of view from the and monitoring hotspots. The User can also be prompted to retest after a defined SLA (say 2-3 days) to keep updated track with the help of notifications to track the spread. The region can further be classified as Green, Orange, Red zones depending on the spread.
 
 # Scope
 
